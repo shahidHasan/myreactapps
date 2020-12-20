@@ -1,5 +1,4 @@
 import React from 'react';
-import VideoApi from '../apis/VideoApi';
 
 
 
@@ -13,7 +12,7 @@ const VideoDetail =({video})=>{
         return (
             <div >
                 <div className="ui embed">
-                             <iframe src={videourl} ref={divRef}></iframe>
+                             <iframe  title={video.snippet.title} src={videourl} ref={divRef}></iframe>
                 </div>
                 
 
